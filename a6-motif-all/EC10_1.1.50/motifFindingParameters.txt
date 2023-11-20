@@ -1,0 +1,1 @@
+cmd = /public/home/2022122/xugang/project/antidrug/output/a5-fasta/EC10_1.1.50.fa fasta /public/home/2022122/xugang/project/antidrug/output/a6-motif/EC10_1.1.50 -fasta /public/home/2022122/xugang/project/antidrug/reference/Ecoli.v1.fa -p 28

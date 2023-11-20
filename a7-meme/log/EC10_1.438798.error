@@ -1,0 +1,63 @@
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   fnode203
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+The output directory '/public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_1.1.100' already exists.
+Its contents will be overwritten.
+[fnode203:16432] 7 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[fnode203:16432] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[fnode203:16445] *** Process received signal ***
+[fnode203:16445] Signal: Bus error (7)
+[fnode203:16445] Signal code: Non-existant physical address (2)
+[fnode203:16445] Failing at address: 0x56230df504a0
+[fnode203:16445] [ 0] /lib64/libpthread.so.0(+0xf5d0)[0x2b429f5a75d0]
+[fnode203:16445] [ 1] [0x56230deff814]
+[fnode203:16445] [ 2] [0x56230df00a01]
+[fnode203:16445] [ 3] [0x56230deed97b]
+[fnode203:16445] [ 4] [0x56230def4937]
+[fnode203:16445] [ 5] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2b429fbfa3d5]
+[fnode203:16445] [ 6] [0x56230ded3815]
+[fnode203:16445] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 4 with PID 16445 on node fnode203 exited on signal 7 (Bus error).
+--------------------------------------------------------------------------
+
+ERROR conda.cli.main_run:execute(47): `conda run meme /public/home/2022122/xugang/project/antidrug/output/a5-fasta/EC10_1.1.100.fa -oc /public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_1.1.100 -p 8 -dna -mod zoops -nmotifs 3 -revcomp` failed. (See above for error)
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   fnode203
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+The output directory '/public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_1.2.100' already exists.
+Its contents will be overwritten.
+[fnode203:18117] 7 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[fnode203:18117] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[fnode203:18133] *** Process received signal ***
+[fnode203:18133] Signal: Bus error (7)
+[fnode203:18133] Signal code: Non-existant physical address (2)
+[fnode203:18133] Failing at address: 0x564c122d7a48
+[fnode203:18133] [ 0] /lib64/libpthread.so.0(+0xf5d0)[0x2b9d5f0aa5d0]
+[fnode203:18133] [ 1] [0x564c1227f7b3]
+[fnode203:18133] [ 2] [0x564c12280a01]
+[fnode203:18133] [ 3] [0x564c1226d97b]
+[fnode203:18133] [ 4] [0x564c12274937]
+[fnode203:18133] [ 5] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2b9d5f6fd3d5]
+[fnode203:18133] [ 6] [0x564c12253815]
+[fnode203:18133] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 6 with PID 18133 on node fnode203 exited on signal 7 (Bus error).
+--------------------------------------------------------------------------
+
+ERROR conda.cli.main_run:execute(47): `conda run meme /public/home/2022122/xugang/project/antidrug/output/a5-fasta/EC10_1.2.100.fa -oc /public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_1.2.100 -p 8 -dna -mod zoops -nmotifs 3 -revcomp` failed. (See above for error)
+slurmstepd: error: Detected 2 oom-kill event(s) in step 438798.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

@@ -1,0 +1,473 @@
+
+Selected Options:
+	Input file = /public/home/2022122/xugang/project/antidrug/output/a5-fasta/EC10_2.plasmid.1.100.fa
+	Promoter Set = fasta
+	Output Directory = /public/home/2022122/xugang/project/antidrug/output/a6-motif/EC10_2.plasmid.1.100
+	Will use FASTA files for motif finding
+		Target Sequences = /public/home/2022122/xugang/project/antidrug/output/a5-fasta/EC10_2.plasmid.1.100.fa
+		Background Sequences = /public/home/2022122/xugang/project/antidrug/reference/abm18396.puc57.fa
+	Using 56 CPUs
+	Using custom gene IDs for GO analysis
+	Parsing FASTA format files...
+	Found 3729 sequences
+	Found 1 sequences
+
+	Progress: Step4 - removing redundant promoters
+
+	Progress: Step5 - adjusting background sequences for GC/CpG content...
+
+	Sequences processed:
+		Auto detected maximum sequence length of 100 bp
+		3730 total
+
+	Frequency Bins: 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.6 0.7 0.8
+	Freq	Bin	Count
+	0.2	0	1
+	0.25	1	6
+	0.3	2	44
+	0.35	3	26
+	0.4	4	82
+	0.45	5	286
+	0.5	6	659
+	0.6	7	1250
+	0.7	8	1320
+	0.8	9	56
+	Bin	# Targets	# Background	Background Weight
+	7	1249	1	1.000
+
+	Normalizing lower order oligos using homer2
+
+	Reading input files...
+	1250 total sequences read
+	Autonormalization: 1-mers (4 total)
+		A	22.64%	50.00%	0.453
+		C	27.36%	50.00%	0.547
+		G	27.36%	50.00%	0.547
+		T	22.64%	50.00%	0.453
+	Autonormalization: 2-mers (16 total)
+		AA	5.90%	65.47%	0.090
+		CA	6.47%	65.47%	0.099
+		GA	6.19%	65.47%	0.095
+		TA	4.06%	65.47%	0.062
+		AC	5.45%	65.47%	0.083
+		CC	6.99%	65.47%	0.107
+		GC	8.74%	65.47%	0.134
+		TC	6.19%	65.47%	0.095
+		AG	5.96%	65.47%	0.091
+		CG	7.95%	65.47%	0.121
+		GG	6.99%	65.47%	0.107
+		TG	6.47%	65.47%	0.099
+		AT	5.32%	65.47%	0.081
+		CT	5.96%	65.47%	0.091
+		GT	5.45%	65.47%	0.083
+		TT	5.90%	65.47%	0.090
+	Autonormalization: 3-mers (64 total)
+	Normalization weights can be found in file: /public/home/2022122/xugang/project/antidrug/output/a6-motif/EC10_2.plasmid.1.100/seq.autonorm.tsv
+	Converging on autonormalization solution:
+	
+	Final normalization:	Autonormalization: 1-mers (4 total)
+		A	22.64%	77.05%	0.294
+		C	27.36%	77.05%	0.355
+		G	27.36%	77.05%	0.355
+		T	22.64%	77.05%	0.294
+	Autonormalization: 2-mers (16 total)
+		AA	5.90%	84.80%	0.070
+		CA	6.47%	84.80%	0.076
+		GA	6.19%	84.80%	0.073
+		TA	4.06%	84.80%	0.048
+		AC	5.45%	84.80%	0.064
+		CC	6.99%	84.80%	0.082
+		GC	8.74%	84.80%	0.103
+		TC	6.19%	84.80%	0.073
+		AG	5.96%	84.80%	0.070
+		CG	7.95%	84.80%	0.094
+		GG	6.99%	84.80%	0.082
+		TG	6.47%	84.80%	0.076
+		AT	5.32%	84.80%	0.063
+		CT	5.96%	84.80%	0.070
+		GT	5.45%	84.80%	0.064
+		TT	5.90%	84.80%	0.070
+	Autonormalization: 3-mers (64 total)
+
+	Progress: Step6 - Gene Ontology Enrichment Analysis
+	Skipping...
+
+	Progress: Step7 - Known motif enrichment
+
+	Reading input files...
+	1250 total sequences read
+	1006 motifs loaded
+	Cache length = 11180
+	Using hypergeometric scoring
+	Checking enrichment of 1006 motif(s)
+	|0%                                    50%                                  100%|
+	=================================================================================
+Illegal division by zero at /public/home/2022122/xugang/app/miniconda3/bin/findKnownMotifs.pl line 153.
+
+	Progress: Step8 - De novo motif finding (HOMER)
+
+	Number of Trial motifs (-T) set to 56 (from 10) to work well with 56 CPUs
+	Scanning input files...
+	Parsing sequences...
+	|0%                                   50%                                  100%|
+	===================================================================================
+	Total number of Oligos: 6766
+	Autoadjustment for sequence coverage in background: 1.11x
+
+	Oligos: 6766 of 34497 max
+	Tree  : 17476 of 172485 max
+	Optimizing memory usage...
+	Cache length = 11180
+	Using hypergeometric scoring
+
+	Global Optimization Phase: Looking for enriched oligos with up to 1 mismatches...
+
+	Screening oligos 6766 (allowing 0 mismatches):
+	|0%                                   50%                                  100%|
+	================================================================================
+		7.77% skipped, 92.23% checked (6240 of 6766), of those checked:
+		7.77% not in target, 0.00% increased p-value, 0.00% high p-value
+
+	Screening oligos 6766 (allowing 1 mismatches):
+	|0%                                   50%                                  100%|
+	===============================================================================
+		7.77% skipped, 92.23% checked (6240 of 6766), of those checked:
+		0.00% not in target, 92.17% increased p-value, 92.17% high p-value
+	Reading input files...
+	1250 total sequences read
+	Cache length = 11180
+	Using hypergeometric scoring
+
+	Local Optimization Phase:
+	1 of 25 Initial Sequence: GTGATAAC... (0.000)
+		Round 1: 0.00 GTGATAAC T:0.0(0.00%),B:0.0(0.00%),P:1e0
+		=Final=: 0.00 GTGATAAC T:10.0(0.80%),B:0.8(inf%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	2 of 25 Initial Sequence: ACTTCAAG... (0.000)
+		Round 1: 0.00 ACTTCAAG T:0.0(0.00%),B:0.0(0.00%),P:1e0
+		=Final=: 0.00 ACTTCAAG T:32.0(2.56%),B:0.8(inf%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	3 of 25 Initial Sequence: GATAACAC... (0.000)
+		Round 1: 0.00 GATAACAC T:0.0(0.00%),B:0.0(0.00%),P:1e0
+		=Final=: 0.00 GATAACAC T:1.0(0.08%),B:0.0(-nan%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	4 of 25 Initial Sequence: ATAACACT... (0.000)
+		Round 1: 0.00 ATAACACT T:0.0(0.00%),B:0.0(0.00%),P:1e0
+		=Final=: 0.00 ATAACACT T:1.0(0.08%),B:0.0(-nan%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	5 of 25 Initial Sequence: AACACTGC... (0.000)
+		Round 1: 0.00 AACACTGC T:0.0(0.00%),B:0.0(0.00%),P:1e0
+		=Final=: 0.00 AACACTGC T:1.0(0.08%),B:0.0(-nan%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	Remaining seeds don't look promising (After initial 5 motifs, logp 0.000 > -9.097)
+
+	Finalizing Enrichment Statistics (new in v3.4)
+	Reading input files...
+	1250 total sequences read
+	Cache length = 11180
+	Using hypergeometric scoring
+	Checking enrichment of 5 motif(s)
+	|0%                                    50%                                  100%|
+	=================================================================================
+	Output in file: /public/home/2022122/xugang/project/antidrug/output/a6-motif/EC10_2.plasmid.1.100/homerMotifs.motifs8
+
+
+	Number of Trial motifs (-T) set to 56 (from 10) to work well with 56 CPUs
+	Scanning input files...
+	Parsing sequences...
+	|0%                                   50%                                  100%|
+	===================================================================================
+	Total number of Oligos: 8470
+	Autoadjustment for sequence coverage in background: 1.13x
+
+	Oligos: 8470 of 111899 max
+	Tree  : 27768 of 559495 max
+	Optimizing memory usage...
+	Cache length = 11180
+	Using hypergeometric scoring
+
+	Global Optimization Phase: Looking for enriched oligos with up to 1 mismatches...
+
+	Screening oligos 8470 (allowing 0 mismatches):
+	|0%                                   50%                                  100%|
+	================================================================================
+		7.97% skipped, 92.03% checked (7795 of 8470), of those checked:
+		7.97% not in target, 0.00% increased p-value, 0.00% high p-value
+
+	Screening oligos 8470 (allowing 1 mismatches):
+	|0%                                   50%                                  100%|
+	================================================================================
+		7.97% skipped, 92.03% checked (7795 of 8470), of those checked:
+		0.00% not in target, 89.57% increased p-value, 89.57% high p-value
+	Reading input files...
+	1250 total sequences read
+	Cache length = 11180
+	Using hypergeometric scoring
+
+	Local Optimization Phase:
+	1 of 25 Initial Sequence: GTGATAACAC... (0.000)
+		Round 1: 0.00 GTGATAACAC T:0.0(0.00%),B:0.0(0.00%),P:1e0
+		=Final=: 0.00 GTGATAACAC T:10.0(0.80%),B:0.8(inf%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	2 of 25 Initial Sequence: TCGTCAGGGG... (0.000)
+		Round 1: 0.00 TCGTCAGGGG T:0.0(0.00%),B:0.0(0.00%),P:1e0
+		=Final=: 0.00 TCGTCAGGGG T:80.0(6.41%),B:0.8(inf%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	3 of 25 Initial Sequence: GATAACACTG... (0.000)
+		Round 1: 0.00 GATAACACTG T:0.0(0.00%),B:0.0(0.00%),P:1e0
+		=Final=: 0.00 GATAACACTG T:1.0(0.08%),B:0.0(-nan%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	4 of 25 Initial Sequence: ATAACACTGC... (0.000)
+		Round 1: 0.00 ATAACACTGC T:0.0(0.00%),B:0.0(0.00%),P:1e0
+		=Final=: 0.00 ATAACACTGC T:1.0(0.08%),B:0.0(-nan%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	5 of 25 Initial Sequence: AACACTGCGG... (0.000)
+		Round 1: 0.00 AACACTGCGG T:0.0(0.00%),B:0.0(0.00%),P:1e0
+		=Final=: 0.00 AACACTGCGG T:1.0(0.08%),B:0.0(-nan%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	Remaining seeds don't look promising (After initial 5 motifs, logp 0.000 > -9.097)
+
+	Finalizing Enrichment Statistics (new in v3.4)
+	Reading input files...
+	1250 total sequences read
+	Cache length = 11180
+	Using hypergeometric scoring
+	Checking enrichment of 5 motif(s)
+	|0%                                    50%                                  100%|
+	=================================================================================
+	Output in file: /public/home/2022122/xugang/project/antidrug/output/a6-motif/EC10_2.plasmid.1.100/homerMotifs.motifs10
+
+
+	Number of Trial motifs (-T) set to 56 (from 10) to work well with 56 CPUs
+	-blen automatically set to 2
+	Scanning input files...
+	Parsing sequences...
+	|0%                                   50%                                  100%|
+	===================================================================================
+	Total number of Oligos: 9292
+	Autoadjustment for sequence coverage in background: 1.16x
+
+	Oligos: 9292 of 109399 max
+	Tree  : 38060 of 546995 max
+	Optimizing memory usage...
+	Cache length = 11180
+	Using hypergeometric scoring
+
+	Global Optimization Phase: Looking for enriched oligos with up to 1 mismatches...
+
+	Screening oligos 9292 (allowing 0 mismatches):
+	|0%                                   50%                                  100%|
+	================================================================================
+		7.62% skipped, 92.38% checked (8584 of 9292), of those checked:
+		7.62% not in target, 0.00% increased p-value, 0.00% high p-value
+
+	Screening oligos 9292 (allowing 1 mismatches):
+	|0%                                   50%                                  100%|
+	================================================================================
+		7.62% skipped, 92.38% checked (8584 of 9292), of those checked:
+		0.00% not in target, 87.68% increased p-value, 87.68% high p-value
+	Reading input files...
+	1250 total sequences read
+	Cache length = 11180
+	Using hypergeometric scoring
+
+	Local Optimization Phase:
+	1 of 25 Initial Sequence: GTGATAACACTG... (0.000)
+		Round 1: 0.00 GTGATAACACTG T:0.0(0.00%),B:0.0(0.00%),P:1e0
+		=Final=: 0.00 GTGATAACACTG T:10.0(0.80%),B:0.8(inf%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	2 of 25 Initial Sequence: CGAGCGCAGCGA... (0.000)
+		Round 1: 0.00 CGAGCGCAGCGA T:0.0(0.00%),B:0.0(0.00%),P:1e0
+		=Final=: 0.00 CGAGCGCAGCGA T:22.0(1.76%),B:0.8(inf%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	3 of 25 Initial Sequence: GATAACACTGCG... (0.000)
+negative factorial
+		Round 1: 0.00 GATAACACTGCG T:0.0(0.00%),B:0.0(0.00%),P:1e0
+		=Final=: 0.00 GATAACACTGCG T:1.0(0.08%),B:0.0(-nan%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	4 of 25 Initial Sequence: ATAACACTGCGG... (0.000)
+negative factorial
+		Round 1: 0.00 ATAACACTGCGG T:0.0(0.00%),B:0.0(0.00%),P:1e0
+		=Final=: 0.00 ATAACACTGCGG T:1.0(0.08%),B:0.0(-nan%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	5 of 25 Initial Sequence: AACACTGCGGCC... (0.000)
+		Round 1: 0.00 AACACTGCGGCC T:0.0(0.00%),B:0.0(0.00%),P:1e0
+		=Final=: 0.00 AACACTGCGGCC T:1.0(0.08%),B:0.0(-nan%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	Remaining seeds don't look promising (After initial 5 motifs, logp 0.000 > -9.097)
+
+	Finalizing Enrichment Statistics (new in v3.4)
+	Reading input files...
+	1250 total sequences read
+	Cache length = 11180
+	Using hypergeometric scoring
+	Checking enrichment of 5 motif(s)
+	|0%                                    50%                                  100%|
+	=================================================================================
+	Output in file: /public/home/2022122/xugang/project/antidrug/output/a6-motif/EC10_2.plasmid.1.100/homerMotifs.motifs12
+
+	(Motifs in homer2 format)
+	Determining similar motifs... 15 reduced to 5 motifs
+	Outputing HTML and sequence logos for motif comparison...
+	Checking de novo motifs against known motifs...
+	Formatting HTML page...
+		1 of 5 (1e0) similar to elt-3/MA0542.1/Jaspar(0.805)
+		2 of 5 (1e0) similar to REI1/MA0364.1/Jaspar(0.815)
+		3 of 5 (1e0) similar to ROX1/Literature(Harbison)/Yeast(0.677)
+		4 of 5 (1e0) similar to POL001.1_MTE/Jaspar(0.712)
+		5 of 5 (1e0) similar to XBP1/Literature(Harbison)/Yeast(0.757)
+	Job finished
+
+
+Selected Options:
+	Input file = /public/home/2022122/xugang/project/antidrug/output/a5-fasta/EC10_2.plasmid.2.100.fa
+	Promoter Set = fasta
+	Output Directory = /public/home/2022122/xugang/project/antidrug/output/a6-motif/EC10_2.plasmid.2.100
+	Will use FASTA files for motif finding
+		Target Sequences = /public/home/2022122/xugang/project/antidrug/output/a5-fasta/EC10_2.plasmid.2.100.fa
+		Background Sequences = /public/home/2022122/xugang/project/antidrug/reference/Ecoli.v1.fa2
+	Using 56 CPUs
+	Using custom gene IDs for GO analysis
+	Parsing FASTA format files...
+	Found 3729 sequences
+readline() on closed filehandle IN at /public/home/2022122/xugang/app/miniconda3/bin/fasta2tab.pl line 16.
+	Found 0 sequences
+Use of uninitialized value $len in numeric lt (<) at /public/home/2022122/xugang/app/miniconda3/bin/cleanUpSequences.pl line 36, <IN> line 1.
+Use of uninitialized value $len in numeric gt (>) at /public/home/2022122/xugang/app/miniconda3/bin/cleanUpSequences.pl line 40, <IN> line 1.
+Use of uninitialized value $line[1] in substitution (s///) at /public/home/2022122/xugang/app/miniconda3/bin/cleanUpSequences.pl line 44, <IN> line 1.
+Use of uninitialized value $line[1] in substitution (s///) at /public/home/2022122/xugang/app/miniconda3/bin/cleanUpSequences.pl line 45, <IN> line 1.
+Use of uninitialized value $line[1] in substitution (s///) at /public/home/2022122/xugang/app/miniconda3/bin/cleanUpSequences.pl line 46, <IN> line 1.
+Use of uninitialized value $line[1] in substitution (s///) at /public/home/2022122/xugang/app/miniconda3/bin/cleanUpSequences.pl line 47, <IN> line 1.
+Use of uninitialized value $line[1] in substitution (s///) at /public/home/2022122/xugang/app/miniconda3/bin/cleanUpSequences.pl line 48, <IN> line 1.
+Use of uninitialized value $line[1] in pattern match (m//) at /public/home/2022122/xugang/app/miniconda3/bin/cleanUpSequences.pl line 50, <IN> line 1.
+Use of uninitialized value $line[0] in concatenation (.) or string at /public/home/2022122/xugang/app/miniconda3/bin/cleanUpSequences.pl line 55, <IN> line 1.
+Use of uninitialized value $line[1] in concatenation (.) or string at /public/home/2022122/xugang/app/miniconda3/bin/cleanUpSequences.pl line 55, <IN> line 1.
+Use of uninitialized value in concatenation (.) or string at /public/home/2022122/xugang/app/miniconda3/bin/cleanUpPeakFile.pl line 26, <IN> line 1.
+
+	Progress: Step4 - removing redundant promoters
+
+	Progress: Step5 - adjusting background sequences for GC/CpG content...
+
+	Sequences processed:
+		Auto detected maximum sequence length of 100 bp
+		3729 total
+
+	Frequency Bins: 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.6 0.7 0.8
+	Freq	Bin	Count
+	0.2	0	1
+	0.25	1	2
+	0.3	2	43
+	0.35	3	26
+	0.4	4	77
+	0.45	5	241
+	0.5	6	709
+	0.6	7	1318
+	0.7	8	1279
+	0.8	9	33
+	Bin	# Targets	# Background	Background Weight
+
+	Normalizing lower order oligos using homer2
+
+	Reading input files...
+	0 total sequences read
+	Autonormalization: 1-mers (4 total)
+		A	inf%	inf%	-nan
+		C	inf%	inf%	-nan
+		G	inf%	inf%	-nan
+		T	inf%	inf%	-nan
+	Autonormalization: 2-mers (16 total)
+		AA	inf%	inf%	-nan
+		CA	inf%	inf%	-nan
+		GA	inf%	inf%	-nan
+		TA	inf%	inf%	-nan
+		AC	inf%	inf%	-nan
+		CC	inf%	inf%	-nan
+		GC	inf%	inf%	-nan
+		TC	inf%	inf%	-nan
+		AG	inf%	inf%	-nan
+		CG	inf%	inf%	-nan
+		GG	inf%	inf%	-nan
+		TG	inf%	inf%	-nan
+		AT	inf%	inf%	-nan
+		CT	inf%	inf%	-nan
+		GT	inf%	inf%	-nan
+		TT	inf%	inf%	-nan
+	Autonormalization: 3-mers (64 total)
+	Normalization weights can be found in file: /public/home/2022122/xugang/project/antidrug/output/a6-motif/EC10_2.plasmid.2.100/seq.autonorm.tsv
+	Converging on autonormalization solution:
+	...............................................................................
+	Final normalization:	Autonormalization: 1-mers (4 total)
+		A	inf%	inf%	-nan
+		C	inf%	inf%	-nan
+		G	inf%	inf%	-nan
+		T	inf%	inf%	-nan
+	Autonormalization: 2-mers (16 total)
+		AA	inf%	inf%	-nan
+		CA	inf%	inf%	-nan
+		GA	inf%	inf%	-nan
+		TA	inf%	inf%	-nan
+		AC	inf%	inf%	-nan
+		CC	inf%	inf%	-nan
+		GC	inf%	inf%	-nan
+		TC	inf%	inf%	-nan
+		AG	inf%	inf%	-nan
+		CG	inf%	inf%	-nan
+		GG	inf%	inf%	-nan
+		TG	inf%	inf%	-nan
+		AT	inf%	inf%	-nan
+		CT	inf%	inf%	-nan
+		GT	inf%	inf%	-nan
+		TT	inf%	inf%	-nan
+	Autonormalization: 3-mers (64 total)
+
+	Progress: Step6 - Gene Ontology Enrichment Analysis
+	Skipping...
+
+	Progress: Step7 - Known motif enrichment
+
+	Reading input files...
+	0 total sequences read
+	1006 motifs loaded
+	Cache length = 11180
+	Using hypergeometric scoring
+	Checking enrichment of 1006 motif(s)
+	|0%                                    50%                                  100%|
+	=================================================================================
+Illegal division by zero at /public/home/2022122/xugang/app/miniconda3/bin/findKnownMotifs.pl line 152.
+
+	Progress: Step8 - De novo motif finding (HOMER)
+
+	Number of Trial motifs (-T) set to 56 (from 10) to work well with 56 CPUs
+	Scanning input files...
+!!! Something is wrong... are you sure you chose the right length for motif finding?
+!!! i.e. also check your sequence file!!!
+
+	Number of Trial motifs (-T) set to 56 (from 10) to work well with 56 CPUs
+	Scanning input files...
+!!! Something is wrong... are you sure you chose the right length for motif finding?
+!!! i.e. also check your sequence file!!!
+
+	Number of Trial motifs (-T) set to 56 (from 10) to work well with 56 CPUs
+	-blen automatically set to 2
+	Scanning input files...
+!!! Something is wrong... are you sure you chose the right length for motif finding?
+!!! i.e. also check your sequence file!!!
+Use of uninitialized value in numeric gt (>) at /public/home/2022122/xugang/app/miniconda3/bin/compareMotifs.pl line 1394.
+	!!! Filtered out all motifs!!!
+	Job finished
+

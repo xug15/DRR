@@ -1,0 +1,39 @@
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   cnode2019
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+The output directory '/public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_2.plasmid.1.100' already exists.
+Its contents will be overwritten.
+[cnode2019:02583] 27 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[cnode2019:02583] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 7 with PID 2614 on node cnode2019 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+
+ERROR conda.cli.main_run:execute(47): `conda run meme /public/home/2022122/xugang/project/antidrug/output/a5-fasta/EC10_2.plasmid.1.100.fa -oc /public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_2.plasmid.1.100 -p 28 -dna -mod zoops -nmotifs 3 -revcomp` failed. (See above for error)
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   cnode2019
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+The output directory '/public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_2.plasmid.2.100' already exists.
+Its contents will be overwritten.
+[cnode2019:06432] 27 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[cnode2019:06432] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 5 with PID 6461 on node cnode2019 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+
+ERROR conda.cli.main_run:execute(47): `conda run meme /public/home/2022122/xugang/project/antidrug/output/a5-fasta/EC10_2.plasmid.2.100.fa -oc /public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_2.plasmid.2.100 -p 28 -dna -mod zoops -nmotifs 3 -revcomp` failed. (See above for error)
+slurmstepd: error: Detected 3656 oom-kill event(s) in step 438766.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

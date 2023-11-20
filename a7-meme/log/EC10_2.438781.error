@@ -1,0 +1,65 @@
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   cnode2038
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+The output directory '/public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_2.1.100' already exists.
+Its contents will be overwritten.
+[cnode2038:10355] 7 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[cnode2038:10355] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[cnode2038:10367] *** Process received signal ***
+[cnode2038:10367] Signal: Bus error (7)
+[cnode2038:10367] Signal code: Non-existant physical address (2)
+[cnode2038:10367] Failing at address: 0x2b6dd1a608c0
+[cnode2038:10367] [ 0] /lib64/libpthread.so.0(+0xf5d0)[0x2b6dd0a985d0]
+[cnode2038:10367] [ 1] /public/home/2022122/xugang/app/miniconda3/envs/meme/bin/../lib/./libopen-pal.so.40(opal_mem_hooks_release_hook+0x0)[0x2b6dd1a608c0]
+[cnode2038:10367] [ 2] /public/home/2022122/xugang/app/miniconda3/envs/meme/bin/../lib/./libopen-pal.so.40(+0xb8005)[0x2b6dd1ae5005]
+[cnode2038:10367] [ 3] /lib64/libc.so.6(realloc+0x11a)[0x2b6dd114e77a]
+[cnode2038:10367] [ 4] [0x56487e6c8a80]
+[cnode2038:10367] [ 5] [0x56487e6b597b]
+[cnode2038:10367] [ 6] [0x56487e6bc937]
+[cnode2038:10367] [ 7] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2b6dd10eb3d5]
+[cnode2038:10367] [ 8] [0x56487e69b815]
+[cnode2038:10367] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 10367 on node cnode2038 exited on signal 7 (Bus error).
+--------------------------------------------------------------------------
+
+ERROR conda.cli.main_run:execute(47): `conda run meme /public/home/2022122/xugang/project/antidrug/output/a5-fasta/EC10_2.1.100.fa -oc /public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_2.1.100 -p 8 -dna -mod zoops -nmotifs 3 -revcomp` failed. (See above for error)
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   cnode2038
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+The output directory '/public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_2.2.100' already exists.
+Its contents will be overwritten.
+[cnode2038:12595] 7 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[cnode2038:12595] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[cnode2038:12605] *** Process received signal ***
+[cnode2038:12605] Signal: Bus error (7)
+[cnode2038:12605] Signal code: Non-existant physical address (2)
+[cnode2038:12605] Failing at address: 0x2b747b233040
+[cnode2038:12605] [ 0] /lib64/libpthread.so.0(+0xf5d0)[0x2b747a1e65d0]
+[cnode2038:12605] [ 1] /public/home/2022122/xugang/app/miniconda3/envs/meme/bin/../lib/./libopen-pal.so.40(+0xb8040)[0x2b747b233040]
+[cnode2038:12605] [ 2] /lib64/libc.so.6(realloc+0x11a)[0x2b747a89c77a]
+[cnode2038:12605] [ 3] [0x559916d57a80]
+[cnode2038:12605] [ 4] [0x559916d4497b]
+[cnode2038:12605] [ 5] [0x559916d4b937]
+[cnode2038:12605] [ 6] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2b747a8393d5]
+[cnode2038:12605] [ 7] [0x559916d2a815]
+[cnode2038:12605] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 12605 on node cnode2038 exited on signal 7 (Bus error).
+--------------------------------------------------------------------------
+
+ERROR conda.cli.main_run:execute(47): `conda run meme /public/home/2022122/xugang/project/antidrug/output/a5-fasta/EC10_2.2.100.fa -oc /public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_2.2.100 -p 8 -dna -mod zoops -nmotifs 3 -revcomp` failed. (See above for error)

@@ -1,0 +1,4 @@
+[E::idx_find_and_load] Could not retrieve index file for '/public/home/2022122/xugang/project/antidrug/output/a2-bam/EC10_1.sort.bam'
+'/public/home/2022122/xugang/project/antidrug/output/a2-bam/EC10_1.sort.bam' does not appear to have an index. You MUST index the file first!
+
+ERROR conda.cli.main_run:execute(47): `conda run bamCoverage -b /public/home/2022122/xugang/project/antidrug/output/a2-bam/EC10_1.sort.bam -of bigwig -o /public/home/2022122/xugang/project/antidrug/output/a3-bigwig/EC10_1.bw -p 28 --ignoreDuplicates --binSize 1000 --normalizeUsing RPKM` failed. (See above for error)

@@ -1,0 +1,67 @@
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   cnode2015
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+The output directory '/public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_1.1.50' already exists.
+Its contents will be overwritten.
+[cnode2015:58008] 27 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[cnode2015:58008] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 16 with PID 58043 on node cnode2015 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+
+ERROR conda.cli.main_run:execute(47): `conda run meme /public/home/2022122/xugang/project/antidrug/output/a5-fasta/EC10_1.1.50.fa -oc /public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_1.1.50 -p 28 -dna -mod zoops -nmotifs 3 -revcomp` failed. (See above for error)
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   cnode2015
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+The output directory '/public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_1.2.50' already exists.
+Its contents will be overwritten.
+[cnode2015:61351] 27 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[cnode2015:61351] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[cnode2015:61412] *** Process received signal ***
+[cnode2015:61412] Signal: Bus error (7)
+[cnode2015:61412] Signal code: Non-existant physical address (2)
+[cnode2015:61412] Failing at address: 0x2b5620eb48c0
+[cnode2015:61389] *** Process received signal ***
+[cnode2015:61389] Signal: Bus error (7)
+[cnode2015:61389] Signal code: Non-existant physical address (2)
+[cnode2015:61389] Failing at address: 0x2ae1637868c0
+[cnode2015:61412] [ 0] /lib64/libpthread.so.0(+0xf5d0)[0x2b561feec5d0]
+[cnode2015:61412] [ 1] [cnode2015:61389] [ 0] /lib64/libpthread.so.0(+0xf5d0)[0x2ae1627be5d0]
+[cnode2015:61389] [ 1] /public/home/2022122/xugang/app/miniconda3/envs/meme/bin/../lib/./libopen-pal.so.40(opal_mem_hooks_release_hook+0x0)[0x2b5620eb48c0]
+[cnode2015:61412] [ 2] /public/home/2022122/xugang/app/miniconda3/envs/meme/bin/../lib/./libopen-pal.so.40(opal_mem_hooks_release_hook+0x0)[0x2ae1637868c0]
+[cnode2015:61389] [ 2] /public/home/2022122/xugang/app/miniconda3/envs/meme/bin/../lib/./libopen-pal.so.40(+0xb8005)[0x2b5620f39005]
+[cnode2015:61412] [ 3] /public/home/2022122/xugang/app/miniconda3/envs/meme/bin/../lib/./libopen-pal.so.40(+0xb8005)[0x2ae16380b005]
+[cnode2015:61389] [ 3] /lib64/libc.so.6(realloc+0x11a)[0x2b56205a277a]
+[cnode2015:61412] [ 4] /lib64/libc.so.6(realloc+0x11a)[0x2ae162e7477a]
+[cnode2015:61389] [ 4] [0x55a9ef54ba80]
+[cnode2015:61412] [ 5] [0x55a9ef53897b]
+[cnode2015:61412] [ 6] [0x55a9ef53f937]
+[cnode2015:61412] [ 7] [0x561e87bffa80]
+[cnode2015:61389] [ 5] [0x561e87bec97b]
+[cnode2015:61389] [ 6] [0x561e87bf3937]
+[cnode2015:61389] [ 7] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2ae162e113d5]
+[cnode2015:61389] [ 8] [0x561e87bd2815]
+[cnode2015:61389] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b562053f3d5]
+[cnode2015:61412] [ 8] [0x55a9ef51e815]
+[cnode2015:61412] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 17 with PID 61389 on node cnode2015 exited on signal 7 (Bus error).
+--------------------------------------------------------------------------
+
+ERROR conda.cli.main_run:execute(47): `conda run meme /public/home/2022122/xugang/project/antidrug/output/a5-fasta/EC10_1.2.50.fa -oc /public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_1.2.50 -p 28 -dna -mod zoops -nmotifs 3 -revcomp` failed. (See above for error)
+slurmstepd: error: Detected 192 oom-kill event(s) in step 438761.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

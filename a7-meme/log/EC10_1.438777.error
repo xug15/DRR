@@ -1,0 +1,50 @@
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   cnode2019
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+The output directory '/public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_1.1.100' already exists.
+Its contents will be overwritten.
+[cnode2019:26340] 7 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[cnode2019:26340] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[cnode2019:26353] *** Process received signal ***
+[cnode2019:26353] Signal: Bus error (7)
+[cnode2019:26353] Signal code: Non-existant physical address (2)
+[cnode2019:26353] Failing at address: 0x561771cc06f7
+[cnode2019:26353] [ 0] /lib64/libpthread.so.0(+0xf5d0)[0x2b71121f95d0]
+[cnode2019:26353] [ 1] [0x561771c689ad]
+[cnode2019:26353] [ 2] [0x561771c5597b]
+[cnode2019:26353] [ 3] [0x561771c5c937]
+[cnode2019:26353] [ 4] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2b711284c3d5]
+[cnode2019:26353] [ 5] [0x561771c3b815]
+[cnode2019:26353] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 2 with PID 26353 on node cnode2019 exited on signal 7 (Bus error).
+--------------------------------------------------------------------------
+
+ERROR conda.cli.main_run:execute(47): `conda run meme /public/home/2022122/xugang/project/antidrug/output/a5-fasta/EC10_1.1.100.fa -oc /public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_1.1.100 -p 8 -dna -mod zoops -nmotifs 3 -revcomp` failed. (See above for error)
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   cnode2019
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+The output directory '/public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_1.2.100' already exists.
+Its contents will be overwritten.
+[cnode2019:28741] 7 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[cnode2019:28741] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 28754 on node cnode2019 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+
+ERROR conda.cli.main_run:execute(47): `conda run meme /public/home/2022122/xugang/project/antidrug/output/a5-fasta/EC10_1.2.100.fa -oc /public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_1.2.100 -p 8 -dna -mod zoops -nmotifs 3 -revcomp` failed. (See above for error)
+slurmstepd: error: Detected 4 oom-kill event(s) in step 438777.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

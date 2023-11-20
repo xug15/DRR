@@ -1,0 +1,33 @@
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   cnode2017
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+The output directory '/public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_1.plasmid.1.100' already exists.
+Its contents will be overwritten.
+[cnode2017:55910] 7 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[cnode2017:55910] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[cnode2017:55922] *** Process received signal ***
+[cnode2017:55922] Signal: Bus error (7)
+[cnode2017:55922] Signal code: Non-existant physical address (2)
+[cnode2017:55922] Failing at address: 0x2b405ae25fc4
+[cnode2017:55922] [ 0] /lib64/libpthread.so.0(+0xf5d0)[0x2b4059dd95d0]
+[cnode2017:55922] [ 1] /public/home/2022122/xugang/app/miniconda3/envs/meme/bin/../lib/./libopen-pal.so.40(+0xb7fc4)[0x2b405ae25fc4]
+[cnode2017:55922] [ 2] /lib64/libc.so.6(realloc+0x11a)[0x2b405a48f77a]
+[cnode2017:55922] [ 3] [0x55d0414dba80]
+[cnode2017:55922] [ 4] [0x55d0414c897b]
+[cnode2017:55922] [ 5] [0x55d0414cf937]
+[cnode2017:55922] [ 6] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2b405a42c3d5]
+[cnode2017:55922] [ 7] [0x55d0414ae815]
+[cnode2017:55922] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 2 with PID 55922 on node cnode2017 exited on signal 7 (Bus error).
+--------------------------------------------------------------------------
+
+ERROR conda.cli.main_run:execute(47): `conda run meme /public/home/2022122/xugang/project/antidrug/output/a5-fasta/EC10_1.plasmid.1.100.fa -oc /public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_1.plasmid.1.100 -p 8 -dna -mod zoops -nmotifs 3 -revcomp` failed. (See above for error)
+slurmstepd: error: *** JOB 438792 ON cnode2017 CANCELLED AT 2023-11-14T13:25:21 ***

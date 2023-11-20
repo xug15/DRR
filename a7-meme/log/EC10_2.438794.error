@@ -1,0 +1,38 @@
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   cnode2022
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+The output directory '/public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_2.1.100' already exists.
+Its contents will be overwritten.
+[cnode2022:50518] 7 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[cnode2022:50518] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[cnode2022:50532] *** Process received signal ***
+[cnode2022:50532] Signal: Bus error (7)
+[cnode2022:50532] Signal code: Non-existant physical address (2)
+[cnode2022:50532] Failing at address: 0x2ab3a318d8c0
+[cnode2022:50535] *** Process received signal ***
+[cnode2022:50535] Signal: Bus error (7)
+[cnode2022:50535] Signal code: Non-existant physical address (2)
+[cnode2022:50535] Failing at address: 0x2b0c48059f10
+[cnode2022:50532] [ 0] /lib64/libpthread.so.0(+0xf5d0)[0x2ab3a21c55d0]
+[cnode2022:50532] [ 1] /public/home/2022122/xugang/app/miniconda3/envs/meme/bin/../lib/./libopen-pal.so.40(opal_mem_hooks_release_hook+0x0)[0x2ab3a318d8c0]
+[cnode2022:50532] [ 2] /public/home/2022122/xugang/app/miniconda3/envs/meme/bin/../lib/./libopen-pal.so.40(+0xb8005)[0x2ab3a3212005]
+[cnode2022:50532] [ 3] /lib64/libc.so.6(realloc+0x11a)[0x2ab3a287b77a]
+[cnode2022:50532] [ 4] [0x557f51fc3a80]
+[cnode2022:50532] [ 5] [0x557f51fb097b]
+[cnode2022:50532] [ 6] [0x557f51fb7937]
+[cnode2022:50532] [ 7] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2ab3a28183d5]
+[cnode2022:50532] [ 8] [0x557f51f96815]
+[cnode2022:50532] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 4 with PID 50532 on node cnode2022 exited on signal 7 (Bus error).
+--------------------------------------------------------------------------
+
+ERROR conda.cli.main_run:execute(47): `conda run meme /public/home/2022122/xugang/project/antidrug/output/a5-fasta/EC10_2.1.100.fa -oc /public/home/2022122/xugang/project/antidrug/output/a7-meme/EC10_2.1.100 -p 8 -dna -mod zoops -nmotifs 3 -revcomp` failed. (See above for error)
+slurmstepd: error: *** JOB 438794 ON cnode2022 CANCELLED AT 2023-11-14T13:25:16 ***
